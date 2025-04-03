@@ -1,0 +1,180 @@
+
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0;   
+}
+.header{
+    background-color: #aec7ee;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+.logo img{
+    height: 100px;
+    width: auto;
+}
+
+/* Блок с заголовком */
+.services {
+    text-align: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.services h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 70px;
+    color: #333;
+}
+
+.services p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Контейнер для карточек */
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Расстояние между карточками */
+}
+
+/* Карточки */
+.service-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Поднимается при наведении */
+}
+
+/* Иконки в карточках */
+.service-card img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+/* Заголовки карточек */
+.service-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Текст карточек */
+.service-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* comperison */
+.compare-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.compare-section2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: linear-gradient(135deg, #fff3e0, #ffffff); /* Другой цвет градиента */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    flex-direction: row-reverse;
+}
+
+
+/* Общие стили */
+.compare-image img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.compare-content {
+    max-width: 500px;
+    margin-left: 30px;
+}
+
+.compare-content h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.compare-content p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .compare-section, .compare-section2 {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .compare-image img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .compare-content {
+        margin-left: 0;
+    }
+}
+
+/* leearn more btn */
+.more{
+    background-color: #f9f9f9;            
+    height: 60px;
+}
+.learn-btn{
+    text-align: center;
+}
+.learn{
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 16px;
+    color: #f9f9f9;
+    background-color: #6aaef6;
+    border: 2px solid  black;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.learn:hover{
+background-color: #0056b3;
+}
